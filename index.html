@@ -1,8 +1,402 @@
 <!DOCTYPE html>
 <html>
    <head>
+      <meta charset="UTF-8" name="description" content="a modern grimoire for a modern era">
+      <title>
+         A Modern Grimoire
+      </title>
+      <!-- add icon to title bar -->
+      <link rel = "icon" href="media/celtic-knot.ico" type="image/favicon">
+      <!-- add in CSS -->
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <!-- add Google font -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+      <style>
+      body {font-family: "Caveat", cursive}
+      </style>
+      <!-- add in JS for menu -->
+      <script type="text/javascript">
+         var dropdown = document.getElementsByClassName("dropdown-btn");
+         var i;
+
+         for (i = 0; i < dropdown.length; i++) {
+         dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+               dropdownContent.style.display = "none";
+            } else {
+               dropdownContent.style.display = "block";
+            }
+         });
+         } 
+      </script>
    </head>
    <body>
-      <!-- Write your HTML in this file! -->
+      <header>
+         <h1 id="mainHeading">Welcome to My Grimoire</h1>
+         <p>
+            This is my attempt to resurrect a project from <b><u>MANY</u></b> moons ago! (For reference, it was a Geocities site.&#128514;)
+         </p>
+         <p>
+            Below (hopefully to eventually be on separate pages), you will find the bgeinnings of my grimoire. Currently, I am working on building correspondence tables, compiling more research on the deities I work with &/or worship, & sharing a few simple spells. More to be added in the future. &#128513;
+         </p>
+         <img src="media/divider.png" width="100%" alt="gold celtic knotwork divider">
+      </header>
+      <main>
+         <div class="sidenav">
+            <a href="#mainHeading">Back to top</a>
+            <button class="dropdown-btn">Correspondences
+               <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+               <a href="#animals">Animals</a>
+               <a href="#colors">Colors</a>
+               <a href="#plants">Plants</a>
+               <a href="#time">Times, Days, & Dates</a>
+            </div>
+            <button class="dropdown-btn">Deities
+               <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+               <a href="#apollo">Apollo</a>
+               <a href="#hekate">Hekate</a>
+               <a href="#hermes">Hermes</a>
+               <a href="#loki">Loki</a>
+               <a href="#morrigan">The Morrigan</a>
+            </div>
+            <button class="dropdown-btn">Spells
+               <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+               <a href="#protection">Passive Protection</a>
+               <a href="#selfhelp">Self-Help</a>
+               <a href="#hexes">Active Protection</a>
+            </div>
+         </div>
+         <article>
+            <section>
+               <h2>Correspondences</h2>
+               <h3><a name="animals"></a>Animals</h3>
+               <p>
+                     Animals the world over are believed to have various attributes and powers. These attributes can vary greatly depending on culture & history. For example: In the United States, a black cat crossing your path is considered unlucky. However, in England, a black cat crossing your path is good luck, while a white cat is concerned incredibly unlucky. Comparing both these attributions with Ancient Egypt, where cats were worshipped as gods, shows that <b>great</b> variations in correspondence between animals and their attirbutions & powers. For my purposes, I will be including my own personal correspondences.
+               </p>
+               <table style="width:100%">
+                  <tr>
+                     <th style="width:33%">Animals</th>
+                     <th>Concepts</th>
+                  </tr>
+                  <tr>
+                     <td>Fox</td>
+                     <td>Cleverness, curiosity, travel, messages/messengers, Earth & Air</td>
+                  </tr>
+                  <tr>
+                     <td>More to be...</td>
+                     <td>added later...</td>
+                  </tr>
+               </table>
+               <h3><a name="colors"></a>Colors</h3>
+               <p>
+                     Colors have always elicited a rather visceral reaction from us. Mostly, you either love a given color, or you <b>HATE</b> it with the fiery passion of 1,000,000,000 supernovas. Color theory takes these reactions & responses, & defines the average response to different colors. Magically speaking, each of us does the same thing. When you have to make a big presentation, do you wear a color you love for a confidence boost, or a color that you hate? That's literally a low-key spell. So, let's jump into some of the basic color correspondences.
+               </p>
+               <table style="width:100%">
+                  <tr>
+                     <th style="width:33%">Colors</th>
+                     <th>Concepts</th>
+                  </tr>
+                  <tr>
+                     <td>Red</td>
+                     <td>Passion, anger, life, creation, fire, blood</td>
+                  </tr>
+                  <tr>
+                     <td>Orange</td>
+                     <td>Fire</td>
+                  </tr>
+                  <tr>
+                     <td>Yellow</td>
+                     <td>Cowardice, sand</td>
+                  </tr>
+                  <tr>
+                     <td>Green</td>
+                     <td>Growth, money, plants, life, poison, decay, Earth</td>
+                  </tr>
+                  <tr>
+                     <td>More to be...</td>
+                     <td>added later...</td>
+                  </tr>
+               </table>
+               <h3><a name="plants"></a>Plants</h3>
+               <p id="testP" class="funParagraph">
+                     random shite about plants that I'll add later
+               </p>
+               <table style="width:100%">
+                  <tr>
+                     <th style="width:33%">Plants</th>
+                     <th>Concepts</th>
+                  </tr>
+                  <tr>
+                     <td>Oak</td>
+                     <td>Strength, masculinity, growth, Summer</td>
+                  </tr>
+                  <tr>
+                     <td>More to be...</td>
+                     <td>added later...</td>
+                  </tr>
+               </table>
+               <h3><a name="time"></a>Times, Days, & Dates</h3>
+               <p>
+                  Wibbly-wobbly, timey-wimey mess...alonsy! (Sorry, not sorry. My little Whovian hearts couldn't resist.)
+               </p>
+               <p>
+                  ddddd
+               </p>
+               <table style="width:100%">
+                  <tr>
+                     <th style="width:33%">Time Frame</th>
+                     <th>Concepts</th>
+                  </tr>
+                  <tr>
+                     <td>Day</td>
+                     <td>Sun, masculinity, openness</td>
+                  </tr>
+                  <tr>
+                     <td>Night</td>
+                     <td>Moon, femininity, secrets, magic</td>
+                  </tr>
+                  <tr>
+                     <td>More to be...</td>
+                     <td>added later...</td>
+                  </tr>
+               </table>
+            </section>
+            <img src="media/divider.png" width="100%" alt="gold celtic knotwork divider">
+            <section>
+               <h2>Deities</h2>
+               <p>
+                  I have always been drawn to stories of gods, heroes, & villains, regardless of the culture. Ancient Egyptian, Greek, First Nations, Scottish, Irish, Norse. All hold appeal. I have worked with deities from all the aforementioned pantheons, except First Nations pantheons. There are two reasons for this.
+                  <ol>
+                     <li>Despite family history on both sides claiming Cherokee blood, I cannot find any records to support it. Without a legitimate claim to the heritage, trying to worship the gods of a closed pantheon is both disrespectful & stupid.</li>
+                     <li>I've never felt called to any of the entities I discovered in the course of my research.</li>
+                  </ol>
+               </p>
+               <p>
+                  Below I have listed the primary deities that I have previously &/or currently work with &/or worship.
+               </p>
+               <hr>
+               <h3><a name="apollo"></a>Apollo</h3>
+               <table class="deity" width="100%">
+                  <td width="250px">
+                     <figure>
+                        <img src="media/apollo.jpg" width="300px" alt="image of the god Hermes, courtesy of Pio-Clementino Museum, Vatican City">
+                        <figcaption>
+                           A depiction of the god Apollo, courtesy of <a href="https://m.museivaticani.va/content/museivaticani-mobile/en/collezioni/musei/museo-pio-clementino/Museo-Pio-Clementino.html">Pio-Clementino Museum, Vatican City</a>
+                        </figcaption>
+                     </figure>
+                     </td>
+                     <td>
+                        I started working with Apollo while I was in high school. One of our humanities classes focused on Greco-Roman myths, & the book we used listed Apollo as a healing god. I've always been clumsy. So, having to literally run down hallways & up-&-down stairs carrying a backpack that weighed at least much as (& often more than) me, I ended up with a lot of pulled muscles, twisted ankles, & jammed fingers. Connecting with the Earth & praying to Apollo for healing got me through a lot of gym classes without having to pack up & hike to the other end of campus to see the secretary. (Our school only had a nurse for 2 hours on Thursday mornings.)
+                     <br><br>
+                        At some point, he swapped out with his brother Hermes. Neither of them bothered to tell me about it, choosing instead to wait & see how long it took me to figure it out. (Answer: It was <b>YEARS</b>!)
+                     </td>
+               </table>
+               <details>
+                  <summary>Further information</summary>
+                  <table class="info" style="width:100%">
+                     <tr>
+                        <th style="width:33%">Name</th>
+                        <td>Apollo, Phoebus</td>
+                     </tr>
+                     <tr>
+                        <th>Pantheon</th>
+                        <td>Greco-Roman</td>
+                     </tr>
+                     <tr>
+                        <th>Bailiwick</th>
+                        <td>Light, sunlight, music, poetry, prophecy, archery, healing, averting plague & harm</td>
+                     </tr>
+                     <tr>
+                        <th>Signs & Symbols</th>
+                        <td>Sun, bow & arrow, laurel wreath, lyre, swan, raven, laurel, larkspur, cypress</td>
+                     </tr>
+                     <tr>
+                        <th>Preferred Offerings/Tributes</th>
+                        <td>Candle devotion, laurel, larkspur, cypress, raven representation, swan representation, music, poems, doing divination, acts of service</td>
+                     </tr>
+                  </table>
+               </details>
+               <hr>
+               <h3><a name="hekate"></a>Hekate</h3>
+               <table class="deity" width="100%">
+                  <td width="250px">
+                     <figure>
+                        <img src="media/Hekate.png" width="300px" alt="image of the goddess Hekate, courtesy of triplemoonpsycotherapy.com">
+                        <figcaption>
+                           A depiction of the goddess Hekate, courtesy of <a href="triplemoonpsychotherapy.com">Triple Moon Psychotherapy</a>
+                        </figcaption>
+                     </figure>
+                  </td>
+                  <td>
+                     Thanks to Buffy the Vampire Slayer, I discovered a strong connection with Hekate, Goddess of Witches. Over the years since then, that connection has grown & deepened. Fulfilling my need for a strong, healthy maternal influence, Hekate got me through some of the hardest years of my life.
+                  </td>
+               </table>
+               <details>
+                  <summary>Further information</summary>
+                  <table class="info" style="width:100%">
+                     <tr>
+                        <th style="width:33%">Name</th>
+                        <td>Hekate/Hecate, I call Her "Grandmother"</td>
+                     </tr>
+                     <tr>
+                        <th>Pantheon</th>
+                        <td>Greco-Roman, probably predates both</td>
+                     </tr>
+                     <tr>
+                        <th>Bailiwick</th>
+                        <td>Magic, Shadow Work, caring for the forgotten, Ghosts, Witchcraft, Crossroads, Necromancy</td>
+                     </tr>
+                     <tr>
+                        <th>Signs & Symbols</th>
+                        <td>New Moon, triple moon, keys, torches, dogs, polecat</td>
+                     </tr>
+                     <tr>
+                        <th>Preferred Offerings/Tributes</th>
+                        <td>Red wine, blood, candle magic, feeding the homeless, keys, acts of service</td>
+                     </tr>
+                  </table>
+               </details>
+               <hr>
+               <h3><a name="hermes"></a>Hermes</h3>
+               <table class="deity" width="100%">
+                  <td width="250px">
+                     <figure>
+                        <img src="media/hermes.jpg" width="300px" alt="image of the god Hermes, courtesy of State Hermitage Museum, Saint Petersburg">
+                        <figcaption>
+                           A depiction of the god Hermes, courtesy of <a href="https://www.hermitagemuseum.org/wps/portal/hermitage/">State Hermitage Museum, Saint Petersburg</a>
+                        </figcaption>
+                     </figure>
+                  </td>
+                  <td>
+                     I'm honestly not sure when I started working with Hermes, thanks to his & Apollo's little prank. Although, it <b>IS</b> incredibly "on-brand" for both of them. What finally tipped me off was that Hermes didn't react to a long-running jibe I had with Apollo. Any time Apollo expressed displeasure with something, I'd joke that I was sure he'd rather I wasn't "a Cassandra" (lie to him about my motives or intentions). The day he didn't react to it, I knew something was up. It still took me a little time to figure out it was Hermes answering me, though.
+                  </td>
+               </table>
+               <details>
+                  <summary>Further information</summary>
+                  <table class="info" style="width:100%">
+                     <tr>
+                        <th style="width:33%">Name</th>
+                        <td>Hermes</td>
+                     </tr>
+                     <tr>
+                        <th>Pantheon</th>
+                        <td>Greek</td>
+                     </tr>
+                     <tr>
+                        <th>Bailiwick</th>
+                        <td>Animal husbandry, heralds & messengers, trade & merchants, thieves & trickery, language & wiles, roads & hospitality, feasts & banquets, protector of the home, guard dogs, psychopomp (guide of the dead), sleep, omens & rustic divination, gymnasiums & games, rustic music, animal fables, astronomy</td>
+                     </tr>
+                     <tr>
+                        <th>Signs & Symbols</th>
+                        <td>Kerykeion (herald's wand), winged hat, winged boots, herma (cairn stones), ram, hare, crocus, cow, strawberry-tree, tortoise, tortoise-shall lyre, Pan flute</td>
+                     </tr>
+                     <tr>
+                        <th>Preferred Offerings/Tributes</th>
+                        <td>Coins, food, alcohol, words, books, acts of service</td>
+                     </tr>
+                  </table>
+               </details>
+               <hr>
+               <h3><a name="loki"></a>Loki</h3>
+               <table class="deity" width="100%">
+                  <td width="250px">
+                     <figure>
+                        <img src="media/Loki.jpg" width="300px" alt="image of the god Loki, courtesy of Ancient Origins Magazine">
+                     <figcaption>
+                        A depiction of the god Loki, courtesy of <a href="https://www.ancient-origins.net/myths-legends-europe/enigmatic-loki-trickster-among-gods-norse-mythology-002484">Ancient Origins Magazine</a>
+                     </figcaption>
+                     </figure>
+                  </td>
+                  <td>
+                  I'm not exactly sure what my relationship with Loki <b><i>IS</i></b>. He's kinda just always been around. I've randomly encountered &/or attracted his followers throughout my life. And, they are invariably surprised that I'm not also his devotee.
+                  <br><br>
+                  In truth, my life is chaotic enough without inviting a literal chaos gerblin god into it. On the flip side, he might be controbuting to that chaos because I won't work with him as closely as he thinks I should. It's a toss up, & I'm switherin whether to tempt fate to find out.
+                  </td>
+               </table>
+               <details>
+                  <summary>Further information</summary>
+                  <table class="info" style="width:100%">
+                     <tr>
+                        <th style="width:33%">Name</th>
+                        <td>Loki</td>
+                     </tr>
+                     <tr>
+                        <th>Pantheon</th>
+                        <td>Norse</td>
+                     </tr>
+                     <tr>
+                        <th>Bailiwick</th>
+                        <td>Magic, Shadow Work, mothering the motherless</td>
+                     </tr>
+                     <tr>
+                        <th>Signs & Symbols</th>
+                        <td>New Moon, triple moon, keys, torches, dogs</td>
+                     </tr>
+                     <tr>
+                        <th>More to be...</th>
+                        <td>added later...</td>
+                     </tr>
+                  </table>
+               </details>
+               <hr>
+               <h3><a name="morrigan"></a>The Morrigan</h3>
+               <table class="deity" width="100%">
+                  <td width="250px">
+                     <figure>
+                        <img src="media/Morrigan.jpg" width="300px" alt="image of the goddess Morrigan, courtesy of BansheeArts on DeviantArt">
+                        <figcaption>
+                           A depiction of the goddess Morrigan, courtesy of <a href="https://www.deviantart.com/bansheearts/art/Morrigan-558161499">BansheeArts on DeviantArt</a>
+                        </figcaption>
+                     </figure>
+                  </td>
+                  <td>
+                     I am fairly new to working with An Morrigna. Well, by her proper name, anyway. 
+                  </td>
+               </table>
+               <details>
+                  <summary>Further information</summary>
+                  <table style="width:100%">
+                     <tr>
+                        <th style="width:33%">Name</th>
+                        <td>Morrigan, Mór-Ríoghain</td>
+                     </tr>
+                     <tr>
+                        <th>Pantheon</th>
+                        <td>Irish</td>
+                     </tr>
+                     <tr>
+                        <th>Bailiwick</th>
+                        <td><i>Whatever she fucking pleases.</i><br>
+                           Generally considered to be: War, Shadow Work, divination, divine vengeance, shapeshifting</td>
+                     </tr>
+                     <tr>
+                        <th>Signs & Symbols</th>
+                        <td>Blood, ravens/crows, cows, washerwoman, bean sidhe (banshee), fae</td>
+                     </tr>
+                     <tr>
+                        <th>Preferred offerings/Tributes</th>
+                        <td>Blood, wine, candle devotion, divinations, acts of service</td>
+                     </tr>
+                  </table>
+               </details>
+            </section>
+            <img src="media/divider.png" width="100%" alt="gold celtic knotwork divider">
+            <section>
+               <h2>Spells</h2>
+               <p>Spellcraft is often the first thing someone tries. And, it can be entirely intuitive. You don't <b>have</b> to know the traditional meanings of things. You can use what feels right to you, what you have available. But, my personal experience shows that it packs more punch when you align with traditional correspondences.</p>
+            </section>
+         </article>
+      </main>
+      <footer>
+         <h4>Website built & maintained by Kit Pyles. &#169; 2022.</h4>
+      </footer>
    </body>
 </html>
