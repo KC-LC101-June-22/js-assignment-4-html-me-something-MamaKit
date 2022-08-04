@@ -26,6 +26,7 @@
  .dropdown-btn {
    padding: 6px 8px 6px 16px;
    text-decoration: none;
+   font-family: Caveat;
    font-size: 24px;
    color: #818181;
    display: block;
@@ -48,8 +49,7 @@
  }
 
  header {
-   margin-left: 233px
-     /* accommodate the menu */
+   margin-left: 233px /* accommodate the menu */
  }
 
  h1 {
