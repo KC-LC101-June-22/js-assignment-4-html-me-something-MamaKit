@@ -32,7 +32,7 @@ describe ("Grading Tests: ", function () {
    });
 
    it("HTML includes the correct number of certain elements", function() {
-         let pElements = container.body.getElementsByTagName("P").length;
+         let pElements = window.document.body.getElementsByTagName("P").length;
          let headerElements = container.body.getElementsByTagName("Header").length;
          let footerElements = container.body.getElementsByTagName("Footer").length;
          let mainElements = container.body.getElementsByTagName("Main").length;
