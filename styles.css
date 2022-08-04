@@ -12,7 +12,8 @@
   }
 
   .dropdown-btn {
-    font-family: "Caveat", cursive;
+    /* font-family: "Caveat", cursive; */
+    font-family: cursive;
   }
 
   /* Style the sidenav links */
@@ -33,7 +34,8 @@
   body {
     margin: 8px 8px 8px 8px;
     display: block;
-    font-family: "Caveat", cursive;
+    /* font-family: "Caveat", cursive; */
+    font-family: cursive;
     font-size: 20px; /* Increased text to enable scrolling */
     background-color: black;
     color: white;
