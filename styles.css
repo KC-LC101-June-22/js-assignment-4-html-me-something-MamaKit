@@ -1,1 +1,94 @@
-/* Write your CSS here! */
+ @font-face {
+  font-family: "Caveat";
+  src:url(fonts/Caveat-VariableFont_wght.ttf);
+ }
+ 
+ /* Fixed sidenav, full height */
+ .sidenav {
+   height: 98%;
+   width: 225px;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: #111;
+   overflow-x: hidden;
+   padding-top: 20px;
+ }
+
+ .dropdown-btn {
+   font-family: "Caveat", cursive;
+   /* font-family: cursive; */
+ }
+
+ /* Style the sidenav links */
+ .sidenav a,
+ .dropdown-btn {
+   margin-bottom:6px;
+   padding: 6px 8px 6px 16px;
+   text-decoration: none;
+   font-family: Caveat;
+   font-size: 24px;
+   color: #818181;
+   display: block;
+   border: none;
+   background: none;
+   width: 100%;
+   text-align: left;
+   cursor: pointer;
+   outline: none;
+ }
+
+ body {
+   margin: 8px;
+   display: block;
+   font-family: "Caveat", cursive;
+   font-size: 20px;
+   /* Increased text to enable scrolling */
+   background-color: black;
+   color: white;
+ }
+
+ header {
+   margin-left: 233px /* accommodate the menu */
+ }
+
+ h1 {
+   text-align: center;
+ }
+
+ .main-body {
+   margin-left: 233px;
+   /* accommodate the menu */
+ }
+
+ #mainHeading {
+   color: red;
+ }
+
+ .funParagraph {
+   color: green;
+ }
+
+ .dropdown-container {
+   display: all;
+   background-color: #262626;
+   padding-left: 8px;
+ }
+
+ table,
+ th,
+ td {
+   border: 1px solid white;
+   border-collapse: collapse;
+ }
+
+ table.deity td {
+   border: 1px solid black;
+   border-style: solid;
+   vertical-align: top;
+ }
+
+footer {
+ margin-left: 233px;
+}
